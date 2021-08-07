@@ -1,4 +1,4 @@
-const address = '0xE5f0B146FA9FF3A188b72CB8748F7dF8c5A5e168'
+const address = '0x604eD4c60b6d0846e2E403aDa42FE5e3De4d4B8e'
 const ABI = [
 	{
 		"constant": false,
