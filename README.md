@@ -1,4 +1,9 @@
-# 53w
+# ckbet
+
+A simple gamble dapp ported to [Nervos](https://www.nervos.org) Layer2 Godwoken-Polyjuice, forked from [this repo](https://github.com/kyriediculous/dapp-tutorial)
+
+## screen shot
+![](screenshot.png)
 
 ## Project setup
 ```
