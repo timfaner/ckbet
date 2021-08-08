@@ -18,18 +18,28 @@
     "web3": "^1.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "https-browserify": "^1.0.0",
+    "assert": "^2.0.0",
+    "crypto-browserify": "^3.12.0",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.1.1",
+    "vm-browserify": "^1.1.2",
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@babel/preset-env": "^7.15.0",
+    "@vue/cli-plugin-babel": "~5.0.0-beta.2",
+    "@vue/cli-plugin-eslint": "~5.0.0-beta.2",
+    "@vue/cli-plugin-router": "~5.0.0-beta.2",
+    "@vue/cli-plugin-vuex": "~5.0.0-beta.2",
+    "@vue/cli-service": "~5.0.0-beta.2",
+    "eslint": "^7.20.0",
+    "eslint-plugin-vue": "^7.6.0",
     "json-loader": "^0.5.7",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -42,7 +52,7 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@babel/eslint-parser"
     },
     "rules": {}
   },

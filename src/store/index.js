@@ -26,10 +26,20 @@ export const store = new Vuex.Store({
       //console.log('pollWeb3Instance mutation being executed', payload)
       state.web3.coinbase = payload.coinbase
       state.web3.balance = parseInt(payload.balance, 10)
+      state.web3.ckETH_balance = payload.ckETH_balance
+      state.web3.polyJuiceAddress = payload.polyJuiceAddress
     },
     registerContractInstance (state, payload) {
       console.log('Casino contract instance: ', payload)
-      state.contractInstance = () => payload
+      state.contractInstance = () =>  payload 
+
+
+    },
+    registerSudtContractInstance (state, payload) {
+      console.log('Casino contract instance: ', payload)
+      state.sudtInstance =  () => payload
+
+
     }
   },
   actions: {
@@ -49,7 +59,9 @@ export const store = new Vuex.Store({
     
     getContractInstance ({commit}) {
       getContract.then(result => {
-        commit('registerContractInstance', result)
+        console.log(result)
+        commit('registerContractInstance', result[0])
+        commit('registerSudtContractInstance', result[1])
       }).catch(e => console.log(e))
     }
     

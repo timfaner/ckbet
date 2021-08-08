@@ -5,8 +5,14 @@ let state = {
     networkId: null,
     coinbase: null,
     balance: null,
-    error: null
+    error: null,
+    polyJuiceAddress:null,
+    ckETH_balance:null,
+
+
   },
-  contractInstance: null
+  contractInstance: null,
+
+  sudtInstance: null
 }
 export default state
